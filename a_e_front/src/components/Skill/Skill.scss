@@ -1,0 +1,32 @@
+@import "../../styles/colors.scss";
+
+.skill_div_all {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  min-width: 20vw;
+  max-width: 20vw;
+  min-height: 15vh;
+  max-height: 15vh;
+  @include second_level;
+}
+
+.skill_img_skill {
+  max-width: 5vw;
+  margin: 3%;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skill_div_all {
+    max-width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .skill_div_all {
+    max-width: 50vw;
+  }
+}

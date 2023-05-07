@@ -1,0 +1,19 @@
+@import "../styles/colors.scss";
+
+.App {
+  text-align: center;
+}
+
+.app_section_about {
+  justify-content: center;
+  padding-top: 6%;
+  align-items: center;
+  background: none;
+}
+
+.app_section_wave {
+  position: fixed;
+  min-height: 300vh;
+  min-width: 100vw;
+  z-index: -1;
+}

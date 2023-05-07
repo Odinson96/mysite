@@ -1,0 +1,37 @@
+@import "../../styles/colors.scss";
+
+.onestack_div_all {
+  @include second_level;
+  margin: 3%;
+  display: flex;
+  width: 30vw;
+  height: 45vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.onestack_div_map-substack {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 8%;
+  align-items: flex-start;
+  //   padding-left: 5%;
+  padding: 5%;
+  min-width: 20vw;
+  max-width: 20vw;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #b0c4c9, #d1e9ef);
+  box-shadow: 20px 20px 60px #a6b9be, -20px -20px 60px #e0fbff;
+}
+
+@media only screen and (max-width: 600px) {
+  .onestack_div_all {
+    min-width: 90vw;
+  }
+
+  .onestack_div_map-substack {
+    min-width: 80vw;
+    box-shadow: 8px 8px 20px #a6b9be, -8px -8px 20px #e0fbff;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/colors.scss";
+
+.about_div_all {
+  color: $fc;
+}
+
+.about_div_premap-skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 5%;
+  transition: all 1s ease-in-out;
+}
+
+.about_div_education_flex {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_div_education {
+  @include second_level;
+  max-width: 30vw;
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .about_div_education_flex {
+    margin-top: 10%;
+  }
+
+  .about_div_premap-skill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_div_education {
+    max-width: calc(100vw - 15vw);
+  }
+
+  .about_div_all {
+    margin-top: 10%;
+  }
+}

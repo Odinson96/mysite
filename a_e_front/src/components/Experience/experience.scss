@@ -1,0 +1,13 @@
+@import "../../styles/colors.scss";
+
+.exp_div_all {
+  margin-top: 5%;
+  color: $fc;
+}
+
+.exp_div_map-exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

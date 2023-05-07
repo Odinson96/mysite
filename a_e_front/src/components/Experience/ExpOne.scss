@@ -1,0 +1,46 @@
+@import "../../styles/colors.scss";
+
+.expone_div_all {
+  @include second_level;
+  margin: 3%;
+  max-width: 60vw;
+  min-width: 60vw;
+}
+
+.expone_div_desc {
+  text-align: left;
+  line-height: 2;
+  margin: 2%;
+}
+
+.expone_ul_func {
+  display: flex;
+  margin: 5%;
+  max-width: max-content;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5%;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #b0c4c9, #d1e9ef);
+  box-shadow: 20px 20px 60px #a6b9be, -20px -20px 60px #e0fbff;
+}
+
+a {
+  text-decoration: none;
+  color: $fc;
+}
+
+@media only screen and (max-width: 600px) {
+  .expone_div_all {
+    max-width: 90vw;
+    min-width: 90vw;
+    margin-right: 15px;
+  }
+
+  .expone_ul_func {
+    padding: 10%;
+    max-width: fit-content;
+    min-width: fit-content;
+    box-shadow: 10px 10px 30px #a6b9be, -10px -10px 30px #e0fbff;
+  }
+}

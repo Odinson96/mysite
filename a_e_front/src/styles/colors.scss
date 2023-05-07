@@ -1,0 +1,15 @@
+$bgc: rgb(0, 0, 0);
+$fc: rgb(168, 13, 230);
+
+@mixin second_level {
+  background-color: rgba(215, 230, 243, 0.789);
+  padding: 2%;
+  box-shadow: inset 1px 0.4px 9px 10px rgba(128, 128, 128, 0.635),
+    inset 1px 0.4px 4px 3px rgba(181, 178, 158, 0.688);
+  border-radius: 12px;
+}
+
+@mixin anchor {
+  overflow: hidden;
+  opacity: 0;
+}
